@@ -1,0 +1,9 @@
+{
+    "database": {
+        "host": "localhost",
+        "password": "12345"
+    },
+    "host": "localhost",
+    "port": "8080",
+    "cmd": "tshark -N nd -Tek -i - -e frame.number -e frame.protocols -e frame.time_epoch -e ip.proto -e ipv6.nxt -e udp.stream -e tcp.stream -e ip.src -e ipv6.src -e ip.src_host -e ipv6.src_host -e udp.srcport -e tcp.srcport -e tcp.options.timestamp.tsval -e ip.dst -e ipv6.dst -e ip.dst_host -e ipv6.dst_host -e udp.dstport -e tcp.dstport -e tcp.options.timestamp.tsecr -e frame.cap_len -e ip.len -e tcp.len -e udp.length -e tcp.flags.syn -e tcp.flags.ack -e tcp.flags.fin -e tcp.flags.res -e ssl.handshake.extensions_server_name -e http.host -e http.request.full_uri -e http.request.uri.query.parameter -e http.request.method -e http.content_type  -e http.content_length -e http.user_agent -e http.referer -e http.request.line -e http.response.line -e http.cookie -e radius.User_Name -e radius.Framed-IP-Address -e radius.Acct_Session_Id -e radius.Calling_Station_Id -e dns.count.queries -e dns.count.answers -e dns.qry.name -e dns.resp.name -e dns.a -e openvpn.type -e openvpn.opcode -e openvpn.keyid -e openvpn.peerid -e text -e isakmp.ispi -e isakmp.rspi -e isakmp.version -e isakmp.mjver -e isakmp.mnver -e isakmp.exchangetype -e isakmp.flags -e isakmp.messageid -e isakmp.ike.nat_original_address_ipv4 -e isakmp.ike.nat_original_address_ipv6 -e isakmp.ike.attr.encryption_algorithm -e isakmp.ike.attr.hash_algorithm -e isakmp.ike.attr.authentication_method -e isakmp.ike.attr.group_description -e isakmp.ike.attr.group_type -e isakmp.ike.attr.group_prime -e esp.spi -e esp.sequence -e vlan.id -e vlan.etype -e imf.from -e imf.to -e imf.cc -e imf.bcc -e imf.subject -e imf.message_id | grep -v '_index'"
+}
